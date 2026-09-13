@@ -324,12 +324,16 @@ p { color: var(--muted); }
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   padding: 30px 28px;
+  transition: transform 0.25s var(--ease), box-shadow 0.25s var(--ease);
 }
+.procedure-card:hover { transform: translateY(-4px); box-shadow: 0 20px 40px var(--shadow); }
 .procedure-icon {
   width: 46px; height: 46px; border-radius: 12px;
   background: var(--teal-100); color: var(--teal-700);
-  display: flex; align-items: center; justify-content: center; margin-bottom: 18px;
+  display: flex; align-items: center; justify-content: center; margin: 0 auto 18px;
+  transition: background 0.25s var(--ease), color 0.25s var(--ease), transform 0.3s var(--ease);
 }
+.procedure-card:hover .procedure-icon { background: var(--teal-700); color: var(--cream); transform: scale(1.08) rotate(-4deg); }
 .procedure-name { font-size: 21px; margin-bottom: 10px; }
 .procedure-desc { font-size: 14.5px; line-height: 1.7; margin-bottom: 16px; }
 .procedure-link { display: inline-flex; align-items: center; gap: 7px; font-size: 13.5px; font-weight: 600; color: var(--coral-dark); }
@@ -428,8 +432,10 @@ p { color: var(--muted); }
    FOR PATIENTS
    ============================================================ */
 .patients-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-.patients-card { background: var(--paper); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 26px; }
-.patients-icon { width: 42px; height: 42px; border-radius: 11px; background: var(--teal-100); color: var(--teal-700); display: flex; align-items: center; justify-content: center; margin-bottom: 16px; }
+.patients-card { background: var(--paper); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 26px; transition: transform 0.25s var(--ease), box-shadow 0.25s var(--ease); }
+.patients-card:hover { transform: translateY(-4px); box-shadow: 0 20px 40px var(--shadow); }
+.patients-icon { width: 42px; height: 42px; border-radius: 11px; background: var(--teal-100); color: var(--teal-700); display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; transition: background 0.25s var(--ease), color 0.25s var(--ease), transform 0.3s var(--ease); }
+.patients-card:hover .patients-icon { background: var(--teal-700); color: var(--cream); transform: scale(1.08) rotate(-4deg); }
 .patients-card h3 { font-size: 17px; margin-bottom: 10px; }
 .patients-card p { font-size: 13.5px; line-height: 1.65; }
 .patients-card a { color: var(--coral-dark); font-weight: 600; }
