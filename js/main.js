@@ -13,7 +13,7 @@ const PROVIDERS = [
   },
   {
     name: "Gabriel S. Silva, M.D.",
-    title: "Gastroenterologist &amp; Hepatologist",
+    title: "Gastroenterologist and Hepatologist",
     initials: "GS",
     tags: ["Liver Disease", "Hepatitis", "Endoscopy"],
     bio: "Dr. Silva is a board-certified gastroenterologist with a special interest in hepatology, treating chronic liver conditions including hepatitis, cirrhosis, and fatty liver disease alongside general endoscopic care."

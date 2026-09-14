@@ -403,7 +403,7 @@ p { color: var(--muted); }
 .provider-modal-tag { font-size: 11.5px; font-weight: 600; color: var(--teal-700); background: var(--teal-100); padding: 5px 12px; border-radius: 999px; }
 
 /* ============================================================
-   OFFICE & LOCATION
+   OFFICE AND LOCATION
    ============================================================ */
 .office-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
 .office-card {
